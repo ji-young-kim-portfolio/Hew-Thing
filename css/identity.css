@@ -1,0 +1,444 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #0b140b;}
+
+/* 눈누폰트다운 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+
+
+body{
+    font-size: 14px;
+    line-height: 24px;
+    color: #0b140b;   
+    font-family: 'Ibarra Real Nova',  'Pretendard-Regular';
+    min-width: 1320px;
+    cursor: url(./mc.png), auto;
+}
+a{
+    cursor: url(./mc2.png), auto;
+}
+
+/* top */
+#top{
+    background-color:#f3f5f4 ;
+    border-bottom: 1PX solid #CCC;    
+}
+.top_in{
+    margin: 0 auto;
+    height: 150px;
+    width: 1320px;
+    position: relative;
+    padding-top: 10px;
+}
+.top_in>p{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 2;
+}
+.top_in>p>a{
+    display: inline-block;
+    padding: 15px 0 0 15px;
+    opacity: 0.5;
+}
+.top_in>p>a:hover{
+    opacity: 1;
+}
+
+/* nav */
+.nav{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around; 
+    position: relative;
+}
+.nav>li>a{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 16px;
+}
+.nav>li>a:hover{
+    color: #3d5a2b;
+}
+
+
+/* 서브베뉴 꾸미기 */
+.all_box{display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgb(166, 201, 173);
+    border-radius: 0 0 150px 150px;
+    z-index: 2;
+}
+.sub_box{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    
+}
+
+.sub_box>ul>li>a{
+    display:inline-block;
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    margin-left:35px;
+}
+.sub_box>ul>li>a:hover{
+    color: #368307;
+    border-bottom: 1px solid #ccc;
+}
+.a1{margin-left: -10px;}
+
+.lol{
+    transform: rotate(-30deg); 
+    transform-origin: right bottom;}
+
+
+
+
+/* identity_all text */
+#identity_all{
+    background-color: #f3f5f4;
+    height: 500px;
+}
+.identity_in{
+    width: 1320px;
+    margin: 0px auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.identity_in>h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+.identity_in>h3{
+    font-weight: 500;
+    font-size: 23px;
+}
+.identity_in>p{
+    line-height: 40px;
+    padding-top: 45px;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+/* what */
+#what{
+    background-color: #f3f5f4;
+    height: 520px;
+}
+.what_in{
+    width: 1320px;
+    margin: 0 auto;
+    
+}
+.what_in>h1{
+    font-size: 26px;
+    background: url(./leef.png) no-repeat 1255px 0px;
+    height: 60px;
+}
+.circle{
+    background-color: #bbc4b3;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 80px 20px 50px 300px; 
+    position: relative;   
+}
+.circle>p{
+    position: absolute;
+    top: 124%;
+    left: 41%;
+    font-size: 36px;
+    font-weight: bold;
+}
+.circle>h2{
+    padding: 48px 0 0 39px;
+   
+}
+.circle>.h22{
+    padding: 48px 0 0 34px;
+}
+.square{
+    width: 600px;
+    height: 100px;
+    border: #bbc4b3 5px solid;
+    position: absolute;
+    top: 9px;
+    left: 180px;
+}
+.square>p{
+    text-align: left;
+    margin: 15px 0 0 20px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+span{
+    font-weight: bold;
+}
+
+/* symbol_all */
+#symbol_all{
+    background-color:#cbd4c1 ;
+    height: 500px;
+}
+.symbol_in{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+}
+.symbol_in>h1{
+    background: url(./leef.png) no-repeat 1255px 0px;
+    height: 60px;
+}
+.symbol_in>img{
+    position: absolute;
+    left: 10%;
+    top: 190%;
+}
+.symbol_in>p{
+    position: absolute;
+    left: 35%;
+    top: 280%;
+    color: #fff;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* logo_all */
+#logo_all{
+    background-color: #e1e1d7;
+    height: 700px;
+}
+.logo_in{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 40px;
+    position: relative;
+}
+.logo_in>h1{
+    background: url(./leef.png) no-repeat 1255px 0px;
+    height: 60px;
+}
+.logo_in>p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.logo_in>img{
+    width: 400px;
+    height: 400px;
+}
+.a11{
+    position: absolute;
+    top:119%;
+    left:16%;
+}
+.a2{
+    position: absolute;
+    top: 119%;
+    left: 51%;
+}
+
+/* color_all */
+#color_all{
+    background-color:#f3f5f4 ;
+    height: 1200px;
+}
+.color_in{
+    width: 1320px;
+    margin: 0 auto;
+}
+.color_in>h1{
+    background: url(./leef.png) no-repeat 1255px 40px;
+    height: 60px;
+    padding-top: 50px;
+}
+.color_in>p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.color_in>h3{
+    text-align: center;
+    padding: 50px 0 0 60px;
+    margin-right: 80px;
+    margin-bottom: 70px;
+}
+.corolboxall{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.color_box{
+    border-radius: 142.5px 142.5px 0 0 ;
+    background-color: #e1dad2;
+    width: 285px;
+    height: 184px;   
+    margin-bottom: 20px;
+}
+.main_color>a>.color_box:hover{
+    width: 285px;
+    height: 184px;
+    background: url(./pexels-monstera-6621181.jpg) no-repeat;
+}
+.main_color2> a> .color_box{
+    background-color: #999e7e;
+}
+.main_color2> a> .color_box:hover{
+    background: url(./pexels-chennawit-yulue-913104.jpg) no-repeat;
+}
+.main_color3>a>.color_box{
+    background-color: #6c7556;
+}
+.main_color3>a>.color_box:hover{
+    background: url(./pexels-stance-mitchell-2388616.jpg) no-repeat;
+}
+.main_color4>a>.color_box{
+    background-color: #394320;
+}
+.main_color4>a>.color_box:hover{
+    background: url(./pexels-alice-castro-1781935.jpg);
+}
+
+
+.main_color11>a>.color_box{
+    background-color: #e3d1bd;
+}
+.main_color11>a>.color_box:hover{
+    background: url(./pexels-rahul-shah-840215.jpg);
+}
+.main_color22>a>.color_box{
+    background-color: #a6776f;
+}
+.main_color22>a>.color_box:hover{
+    background: url(./pexels-felix-mittermeier-2832074.jpg);
+}
+.main_color33>a>.color_box{
+    background-color: #9c9d73;
+}
+.main_color33>a>.color_box:hover{
+    background: url(./pexels-irina-iriser-1408226\ \(1\).jpg);
+}
+.main_color44>a>.color_box{
+    background-color: #0a140b;
+}
+.main_color44>a>.color_box:hover{
+    background: url(./pexels-marina-solis-12444417.jpg);
+}
+
+/* store */
+#store{
+    background-color: #f3f5f4;
+    height: 600px;
+}
+.store_in{
+    width: 1320px;
+    margin: 0 auto;
+}
+.store_in>h1{
+    padding-bottom: 20px;
+}
+iframe{
+    padding: 40px 0 0 360px;
+}
+
+
+/* 푸터 로고 */
+#footer_logo{
+    background-color: #f3f5f4;
+    height: 185px;
+}
+.footer_logo_in{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* footer */
+#footer{
+    height: 350px;
+    background: url(./footer.jpg) no-repeat 75% 35% #dfddde;    
+}
+.footer_in{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+  
+    
+}
+.notice{
+    width: 800PX;
+}
+.notice_boder{
+    border-bottom: #0b140b 1PX solid;
+    border-top: #0b140b 2PX solid;
+    padding: 20px 0;
+}
+.left{
+    height: 200px;
+    margin-top: 10px;
+    border-right: #999 3px solid;
+    padding-right: 90PX;
+    float: left;
+}
+.left>h2{
+    padding: 12px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.rigth{
+    margin-top: 10px;
+    float: right;
+    margin-right: 140px;
+}
+.rigth>h2{
+    margin-bottom: 20px;
+    font-size: 33px;
+    line-height: 43px;
+}
+.pp>a{
+    display: inline-block;
+    background-color: #a6776f ;
+    padding: 5px 35px;
+    margin-top: 40px;   
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+}
+.pp>a:nth-child(2){
+    background-color: #406717;
+}
+.pp>a:nth-child(1):hover{
+    background-color: #8d5246;
+}
+.pp>a:nth-child(2):hover{
+    background-color: #293f1b;
+}

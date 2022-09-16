@@ -1,0 +1,394 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #0b140b;}
+
+/* 눈누폰트다운 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+
+
+body{
+  font-size: 14px;
+  line-height: 24px;
+  color: #0b140b;   
+  font-family: 'Ibarra Real Nova',  'Pretendard-Regular';
+  min-width: 1320px;
+  cursor: url(./mc.png), auto;
+}
+a{
+  cursor: url(./mc2.png), auto;
+}
+
+/* icon 꾸미기 */
+.top{
+  position:fixed; 
+  bottom:50px; 
+  right:50px; 
+  display:none;
+}
+
+
+
+/* top */
+#top{
+  background-color:#f3f5f4 ;
+  border-bottom: 1PX solid #CCC;    
+}
+.top_in{
+  margin: 0 auto;
+  height: 150px;
+  width: 1320px;
+  position: relative;
+  padding-top: 10px;
+}
+.top_in>p{
+  position: absolute;
+  right: 0;
+  top: 20px;
+  z-index: 2;
+}
+.top_in>p>a{
+  display: inline-block;
+  padding: 15px 0 0 15px;
+  opacity: 0.5;
+}
+.top_in>p>a:hover{
+  opacity: 1;
+}
+
+/* nav */
+.nav{
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-around; 
+  position: relative;
+  margin-top: -16px;
+}
+.nav>li>a{
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.nav>li>a:hover{
+  color: #3d5a2b;
+}
+
+
+/* 서브베뉴 꾸미기 */
+.all_box{display: none;
+  position: absolute;
+  left: 0;
+  top: 157px;
+  width: 100%;
+  background-color: rgb(166, 201, 173);
+  border-radius: 0 0 150px 150px;
+  z-index: 2;
+}
+.sub_box{
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+  
+}
+
+.sub_box>ul>li>a{
+  display:inline-block;
+  padding: 20px 0;
+  font-size: 16px;
+  text-align: center;
+  margin-left:35px;
+}
+.sub_box>ul>li>a:hover{
+  color: #368307;
+  border-bottom: 1px solid #ccc;
+}
+.a1{margin-left: -10px;}
+
+
+
+canvas {
+    position: absolute;
+    touch-action: none;
+    top: 200px;
+    left:50%;
+    height: 500px;
+    width:1320px;
+    transform: translateX(-50%);
+  }
+  
+  .nn{
+    padding: 0vw;
+    background: #3a862757;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nn>h1 {
+    font-family: termina;
+    font-size:50px;
+    line-height: 70px;
+    max-width: 800px;
+    text-align: center;
+    font-weight: 800;
+    margin: 0 auto;
+    z-index: 2;
+    color: rgb(9, 94, 4);
+  }
+
+
+/* shop_top */
+#s_con{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+#s_con>h1{
+    font-size: 40px;
+    margin: 50px 0 ;
+}
+#s_con>a{
+    display: inline-block;
+    background-color: rgb(126, 177, 122);
+    border-radius: 30px 0 30px 0;
+    padding: 8px 40px ;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+#s_con>a:hover{
+    background-color: #dfddde;
+    color: #406717;
+}
+
+/* shop con */
+#s_all{
+    background-color: #f3f5f4;
+    height: 1900px;
+}
+.s_all_in{
+    width: 1320px;
+    margin: 50px auto;
+}
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+  }
+:active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+  }
+  ::before,
+  ::after {
+    position: absolute;
+    content: "";
+  }
+  
+  .s_ul>li{
+    float: left;
+    margin-right: 100px;
+    margin-top: 60px;
+  }
+  .s_ul>li:nth-child(3n){
+    margin-right: 0;
+  }
+  .s_ul>li>p>a{
+    font-family: 'Ibarra Real Nova',  'Pretendard-Regular';
+  }
+  .btn-holder { 
+    max-width: 364px;
+   
+  }
+  .btn {
+    position: relative;
+    display: inline-block;
+    width: 384px; height: 525px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+  }
+  .bb>a{
+    display: inline-block;
+    background-color: darkgreen;
+    color: #fff;
+    padding:10px 70px;
+    margin-top: 10px;
+  }
+  .bb>a:hover{
+    background-color: #ccc;
+    color: #368307;
+  }
+  .f_big{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  
+    .btn span {         
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 2px;
+      top: 0; left: 0;
+      width: 100%;
+      padding: 15px 10px;
+      transition: 0.3s;
+    }
+   
+  
+  /*--- btn-4 ---*/
+  
+  .btn-4 span {
+    color: rgb(16, 54, 25);
+    background-color: rgb(205, 219, 207);
+  }
+  .btn-4 span:hover {
+    color: rgb(24, 112, 46);
+  }
+  .btn-4::before,
+  .btn-4::after {
+    width: 15%; height: 5px;
+    background-color: rgb(24, 112, 46);
+    z-index: 2;
+  }
+  
+  
+  
+  /* 17. hover-border-7 */
+  .btn.hover-border-7::before,
+  .btn.hover-border-7::after {
+    bottom: 0;
+    transition: width 0.2s 0.35s ease-out;
+  }
+  .btn.hover-border-7::before {
+    right: 50%;
+  }
+  .btn.hover-border-7::after {
+    left: 50%;
+  }
+  .btn.hover-border-7:hover::before,
+  .btn.hover-border-7:hover::after {
+    width: 50%;
+    transition: width 0.2s ease-in;   
+  }
+  
+  .btn.hover-border-7 span::before,
+  .btn.hover-border-7 span::after {
+    width: 0%; height: 0%;
+    background: transparent;
+    opacity: 0;
+    z-index: 2;
+    transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s 0.35s;
+  }
+  .btn.hover-border-7 span::before {
+    bottom: 0; left: 0;
+    border-left: 2px solid rgb(24, 112, 46);
+    border-top: 2px solid rgb(24, 112, 46);
+    border-radius: 200px 0 0 0 ;
+  }
+  .btn.hover-border-7 span::after {
+    bottom: 0; right: 0;
+    border-right: 2px solid rgb(24, 112, 46);
+    border-top: 2px solid rgb(24, 112, 46);
+    border-radius: 0 200px 0 0;
+  }
+  .btn.hover-border-7 span:hover::before,
+  .btn.hover-border-7 span:hover::after {
+    width: 50%; height: 96%;
+    opacity: 1;
+    transition: height 0.2s 0.2s ease-in, width 0.2s 0.4s linear, opacity 0s 0.2s;   
+  }
+  
+
+
+
+
+/* 푸터 로고 */
+#footer_logo{
+    background-color: rgb(237, 247, 233);
+    height: 185px;
+}
+.footer_logo_in{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* footer */
+#footer{
+    height: 350px;
+    background: url(./footer.jpg) no-repeat 75% 35% #dfddde;    
+}
+.footer_in{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+  
+    
+}
+.notice{
+    width: 800PX;
+}
+.notice_boder{
+    border-bottom: #0b140b 1PX solid;
+    border-top: #0b140b 2PX solid;
+    padding: 20px 0;
+}
+.left{
+    height: 200px;
+    margin-top: 20px;
+    border-right: #999 3px solid;
+    padding-right: 200PX;
+    float: left;
+}
+.left>h2{
+    padding: 30px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.rigth{
+    margin-top: 20px;
+    float: right;
+    margin-right: 50px;
+}
+.rigth>h2{
+    margin-bottom: 20px;
+    font-size: 33px;
+    line-height: 43px;
+}
+.pp>a{
+    display: inline-block;
+    background-color: #a6776f ;
+    padding: 5px 35px;
+    margin-top: 40px;   
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+}
+.pp>a:nth-child(2){
+    background-color: #406717;
+}
+.pp>a:nth-child(1):hover{
+    background-color: #8d5246;
+}
+.pp>a:nth-child(2):hover{
+    background-color: #293f1b;
+}
+

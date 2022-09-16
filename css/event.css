@@ -1,0 +1,242 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #0b140b;}
+
+/* 눈누폰트다운 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+
+
+body{
+    font-size: 14px;
+    line-height: 24px;
+    color: #0b140b;   
+    font-family: 'Ibarra Real Nova',  'Pretendard-Regular';
+    min-width: 1320px;
+    cursor: url(./mc.png), auto;
+}
+a{
+    cursor: url(./mc2.png), auto;
+}
+
+/* top */
+#top{
+    background-color:#f3f5f4 ;
+    border-bottom: 1PX solid #CCC;    
+}
+.top_in{
+    margin: 0 auto;
+    height: 150px;
+    width: 1320px;
+    position: relative;
+    padding-top: 10px;
+}
+.top_in>p{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 2;
+}
+.top_in>p>a{
+    
+    display: inline-block;
+    padding: 15px 0 0 15px;
+}
+.top_in>p>a:hover{
+    color: #8d5246;
+    
+}
+
+
+
+/* nav */
+.nav{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around; 
+    position: relative;
+}
+.nav>li>a{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 16px;
+}
+.nav>li>a:hover{
+    color: #3d5a2b;
+}
+
+
+/* 서브베뉴 꾸미기 */
+.all_box{display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(166, 201, 173, 0.5);
+    border-radius: 0 0 150px 150px;
+    z-index: 2;
+}
+.sub_box{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    
+}
+
+.sub_box>ul>li>a{
+    display:inline-block;
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    margin-left:35px;
+}
+.sub_box>ul>li>a:hover{
+    color: #368307;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 이벤트 컨텐츠 */
+#eve_all{
+    background-color: rgb(237, 247, 233);
+    height: 1800px;
+}
+.eve_in{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.eve_in>h1{
+    padding-top: 50px;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.eve_in>p>a{
+    display: inline-block;
+    padding: 5px 15px 0 15px;
+}
+.eve_in>p>a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* ev_img */
+.ev_img>li{
+ float: left;
+ margin: 80px 150px 80px 30px;
+
+}
+.ev_img>li:nth-child(even){
+    margin-right: 0;
+}
+.ev_img>li>a>img{
+    border-radius: 130px 0 130px 0;
+}
+.ev_text{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.ev_text2{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.ev_img>li:hover img{
+    box-shadow: #7fac7f 5px 5px 5px;
+    transition: all 0.5s;
+    transform: rotateY(80);
+}
+.ev_img>li:hover .ev_text{
+    border-radius: 30px 0 30px 0;
+    background-color: #3d5a2bbd;
+    color: #fff;
+}
+
+/* 푸터 로고 */
+#footer_logo{
+    background-color: rgb(237, 247, 233);
+    height: 185px;
+}
+.footer_logo_in{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* footer */
+#footer{
+    height: 350px;
+    background: url(./footer.jpg) no-repeat 75% 35% #dfddde;    
+}
+.footer_in{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+  
+    
+}
+.notice{
+    width: 800PX;
+}
+.notice_boder{
+    border-bottom: #0b140b 1PX solid;
+    border-top: #0b140b 2PX solid;
+    padding: 20px 0;
+}
+.left{
+    height: 200px;
+    margin-top: 20px;
+    border-right: #999 3px solid;
+    padding-right: 200PX;
+    float: left;
+}
+.left>h2{
+    padding: 30px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.rigth{
+    margin-top: 20px;
+    float: right;
+    margin-right: 50px;
+}
+.rigth>h2{
+    margin-bottom: 20px;
+    font-size: 33px;
+    line-height: 43px;
+}
+.pp>a{
+    display: inline-block;
+    background-color: #a6776f ;
+    padding: 5px 35px;
+    margin-top: 40px;   
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+}
+.pp>a:nth-child(2){
+    background-color: #406717;
+}
+.pp>a:nth-child(1):hover{
+    background-color: #8d5246;
+}
+.pp>a:nth-child(2):hover{
+    background-color: #293f1b;
+}
+
