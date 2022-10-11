@@ -1,0 +1,430 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #0b140b;}
+
+/* 눈누폰트다운 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+/* 스크롤바 꾸미기 */
+body::-webkit-scrollbar {/*스크롤바 전체*/
+    width: 13px;
+  }
+  body::-webkit-scrollbar-thumb {/*스크롤바 막대*/
+    background-color: #2b4e36b7;
+    border-radius: 10px; 
+    background-clip: padding-box;
+    border: 3px solid transparent;
+  }
+  body::-webkit-scrollbar-track {/*스크롤바 막대 외부*/
+    background-color: rgb(255, 250, 250);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+
+body{
+    font-size: 14px;
+    line-height: 24px;
+    color: #0b140b;   
+    font-family: 'Ibarra Real Nova',  'Pretendard-Regular';
+    min-width: 1320px;
+    cursor: url(./mc.png), auto;
+}
+a{
+    cursor: url(./mc2.png), auto;
+}
+
+/* icon 꾸미기 */
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+  }
+  
+
+
+/* top */
+#top{
+    background-color:#f3f5f4 ;
+    border-bottom: 1PX solid #CCC;    
+}
+.top_in{
+    margin: 0 auto;
+    height: 150px;
+    width: 1320px;
+    position: relative;
+    padding-top: 10px;
+}
+.top_in>p{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 2;
+}
+.top_in>p>a{
+    display: inline-block;
+    padding: 15px 0 0 15px;
+    opacity: 0.5;
+}
+.top_in>p>a:hover{
+    opacity: 1;
+}
+
+/* nav */
+.nav{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around; 
+    position: relative;
+    margin-top: -16px;
+}
+.nav>li>a{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+.nav>li>a:hover{
+    color: #3d5a2b;
+}
+
+
+/* 서브베뉴 꾸미기 */
+.all_box{display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgb(166, 201, 173);
+    border-radius: 0 0 150px 150px;
+    z-index: 2;
+}
+.sub_box{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    
+}
+
+.sub_box>ul>li>a{
+    display:inline-block;
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    margin-left:35px;
+}
+.sub_box>ul>li>a:hover{
+    color: #368307;
+    border-bottom: 1px solid #ccc;
+}
+.a1{margin-left: -10px;}
+
+/* 상세 소개 top 전체창 */
+#s_top{
+    background-color: rgba(223, 231, 216, 0.534);
+    height: 700px;
+}
+
+/* 상세 소개 top 중간창 */
+.s_top_in{
+    width: 1320px;
+    margin: 0 auto;
+}
+.s_top_in>h2{
+    padding-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.s_text>h1{
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom:30px;
+}
+.s_top_in>p{
+    color: rgba(204, 204, 204, 0.493);
+    font-weight: 100;
+}
+.tab{
+    padding-left: 70px;
+}
+.sst{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    padding: 20px 0 10px 200px;    
+}
+.sstt{
+    padding: 20px 0 10px 30px;
+}
+input{
+    width: 50px;
+    height: 20px;
+    border: #293f1b 1px solid;
+   
+    text-align: center;
+    margin: 15px 0 15px 40px;
+}
+.swiper-container{
+    float: left;
+}
+.s_text{
+    float: left;
+    margin-left: 250px;
+    position: relative;
+}
+p>.kkk{
+    background: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+p>.lll{
+    background: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 60px;
+}
+.bt1{
+    display: inline-block;
+    background-color: #406717;
+    color: #fff;
+    padding: 10px 130px;
+    margin-top: 20px;
+}
+.bt1:hover{
+    color: #0b140b;
+    background-color: #b6cfa6;
+}
+.bt2{
+    display: inline-block;
+    background-color: #fff;
+    border: #293f1b 1px solid;
+    padding: 10px 60px;
+    position: absolute;
+    top: 330px;
+    left: 0;
+}
+.bt2:hover{
+    color: #fff;
+    background-color: #27361d;
+    border: none;
+}
+.bt3{
+    display: inline-block;
+    background-color: #fff;
+    border: #293f1b 1px solid;
+    padding: 10px 60px;
+    position: absolute;
+    top: 330px;
+    left: 170px;
+}
+.bt3:hover{
+    color: #fff;
+    background-color: #27361d;
+    border: none;
+}
+#input_div th{
+    padding: 10px 0;
+    text-align: left;
+}
+#input_div td{
+    padding: 10px 0;
+}
+#input_div input{
+    border: none;
+    width: 50px;
+}
+#input_div #minus, #input_div #plus{
+    background-color: #ccc;
+    width: 15px;
+}
+#input_div #count{
+    text-align: center;
+}
+
+
+/* 슬라이드배너 꾸미기 */
+.slide { width:600px; height:400px;}
+.slide .swiper-slide {text-align: center; font-size: 18px; background: #fff;
+			  /* Center slide text vertically */
+			  display: -webkit-box;
+			  display: -ms-flexbox;
+			  display: -webkit-flex;
+			  display: flex;
+			  -webkit-box-pack: center;
+			  -ms-flex-pack: center;
+			  -webkit-justify-content: center;
+			  justify-content: center;
+			  -webkit-box-align: center;
+			  -ms-flex-align: center;
+			  -webkit-align-items: center;
+			  align-items: center; }
+.slide  .swiper-slide img{
+	display: block; 
+	width:100%;
+}
+
+/*이동버튼 영역*/
+.slide .swiper-button-next:after,
+.slide .swiper-button-prev:after{display:none;}/* 소스에 들어있는 버튼 삭제 */
+.slide .swiper-button-next,
+.slide .swiper-button-prev{width:27px; height:50px;}/* 버튼 크기 */
+.slide .swiper-button-prev{left:10px; background:url(../images/prev.png);}/* 버튼 위치, 버튼 이미지 */
+.slide .swiper-button-next{right:10px; background:url(../images/next.png);}/* 버튼 위치, 버튼 이미지 */
+.slide .swiper-button-prev:hover{background:url(../images/prev_hover.png);}/* 버튼 호버 이미지 */
+.slide .swiper-button-next:hover{background:url(../images/next_hover.png);}/* 버튼 호버 이미지 */
+
+/*블릿버튼 영역*/
+.slide .swiper-pagination-bullet{background:rgb(135, 165, 132); width:10px; height:10px; opacity:0.5;}/* 블릿버튼 크기, 색상, 투명도 */
+.slide .swiper-pagination-bullet-active{opacity:1;} /* 블릿버튼 페이지 표시날 때 투명도 */ 
+.swiper-container-horizontal > .swiper-pagination-bullets{bottom:3px;}/* 블릿버튼 위치 */
+
+/* 탭,상세페이지*/
+#sstqb{
+    height: 11700px;
+    background-color: #f0f1efc5;
+}
+.sstab_in{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+
+/* 탭메뉴 꾸미기 */
+.tab{
+    width: 1200px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .tabnav{
+    width:600px; 
+    overflow: hidden;
+    margin-left: 420px;
+  }
+  .tabnav li{
+    float: left;
+  }
+  .tabnav li a{ 
+    display: block;
+    padding: 20px 40px;
+    border:1px solid #ddd;
+    border-bottom: 1px solid #7ea21e;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* 탭메뉴 클릭했을 때 변화 꾸미기 */
+  .tabnav li .active{
+    border: 1px solid #7ea21e;
+    border-bottom: 1px solid #fff;
+  }
+  .tabnav li a:hover,
+  .tabnav li a.active{
+    background:#fff; 
+    color:#7ea21e; 
+  }
+  
+  /* 탭컨테츠 꾸미기 */
+  .tabcontent{
+    padding: 20px; 
+    height:11400px; 
+    border:1px solid #7ea21e; 
+    position: relative;
+    top: -1px;
+  }
+  
+
+/* 푸터 로고 */
+#footer_logo{
+    background-color: #f0f1efc5;
+    height: 185px;
+}
+.footer_logo_in{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* footer */
+#footer{
+    height: 350px;
+    background:  #dfddde;    
+}
+.footer_in{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+  
+    
+}
+.notice{
+    width: 800PX;
+    float: left;
+}
+.imr{
+    float: right;
+    margin-right: 120px;
+}
+.notice_boder{
+    border-bottom: #0b140b 1PX solid;
+    border-top: #0b140b 2PX solid;
+    padding: 20px 0;
+}
+.left{
+    height: 200px;
+    margin-top: 10px;
+    border-right: #999 3px solid;
+    padding-right: 90PX;
+    float: left;
+}
+.left>h2{
+    padding: 12px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.rigth{
+    margin-top: 10px;
+    float: right;
+    margin-right: 140px;
+}
+.rigth>h2{
+    margin-bottom: 20px;
+    font-size: 33px;
+    line-height: 43px;
+}
+.pp>a{
+    display: inline-block;
+    background-color: #a6776f ;
+    padding: 5px 35px;
+    margin-top: 40px;   
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+}
+.pp>a:nth-child(2){
+    background-color: #406717;
+}
+.pp>a:nth-child(1):hover{
+    background-color: #8d5246;
+}
+.pp>a:nth-child(2):hover{
+    background-color: #293f1b;
+}
+
